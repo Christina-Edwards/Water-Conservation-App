@@ -5,18 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Conservation App</title>
-    
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('en-section').style.display = 'block';
+                document.getElementById('es-section').style.display = 'none';
+            } else {
+                document.getElementById('en-section').style.display = 'none';
+                document.getElementById('es-section').style.display = 'block';
+            }
+        }
+        window.onload = function() {
+            setLanguage('en');
+        };
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <img src="e8f815fe910a9a84f2bd3473df1170c0-image-1560786152689.jpg" alt="Water Conservation" class="img-fluid">
-        <h1> Water Conservation Tips</h1>
-        <p>It's important that we all do our part to use less water. Click through this app for tips for conservation ideas.</p>
-        <img src="https://files.slack.com/files-pri/TRS907ASK-F099YA00T2P/e8f815fe910a9a84f2bd3473df1170c0-image-1560786152689.jpg" alt="Water Conservation Image" class="img-fluid">
-        <div class="container">
-            <button id="englishBtn">English</button>
-            <button id="spanishBtn">Spanish</button>
+    <div class="container-fluid">
+        <div id="en-section">
+            <img src="Waterimage.jpg" alt="Water Conservation" class="img-fluid">
+            <h1 class="display-6">Water Conservation Tips</h1>
+            <p>It's important that we all do our part to use less water. Click through this app for tips for conservation ideas.</p>
+            <div>
+                <button class="btn btn-primary" onclick="setLanguage('en')">English</button>
+                <button class="btn btn-primary" onclick="setLanguage('es')">Spanish</button>
+                <button class="btn btn-primary">Next</button>
+            </div>
+        </div>
+        <div id="es-section" style="display:none;">
+            <img src="Waterimage.jpg" alt="Water Conservation" class="img-fluid">
+            <h1 class="display-6">Consejos para la conservación de agua</h1>
+            <p>Es importante que todos hagamos nuestra parte para usar menos agua. Haz clic en esta aplicación para ver ideas y consejos de conservación.</p>
+            <div>
+                <button class="btn btn-primary" onclick="setLanguage('en')">English</button>
+                <button class="btn btn-primary" onclick="setLanguage('es')">Spanish</button>
+                <button class="btn btn-primary">Next</button>
+            </div>
         </div>
     </div>
 </body>
