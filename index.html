@@ -5,19 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Conservation App</title>
-    <script>
-        function setLanguage(lang) {
-            if (lang === 'en') {
-                document.getElementById('en-section').style.display = 'block';
-                document.getElementById('es-section').style.display = 'none';
-            } else {
-                document.getElementById('en-section').style.display = 'none';
-                document.getElementById('es-section').style.display = 'block';
-            }
-        }
-        window.onload = function() {
-            setLanguage('en');
-        };
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </script>
 </head>
 
@@ -28,8 +16,8 @@
             <h1 class="display-6">Water Conservation Tips</h1>
             <p>It's important that we all do our part to use less water. Click through this app for tips for conservation ideas.</p>
             <div>
-                <button class="btn btn-primary" onclick="setLanguage('en')">English</button>
-                <button class="btn btn-primary" onclick="setLanguage('es')">Spanish</button>
+                <button class="btn btn-primary">English</button>
+                <button class="btn btn-primary">Spanish</button>
                 <button class="btn btn-primary">Next</button>
             </div>
         </div>
@@ -38,8 +26,8 @@
             <h1 class="display-6">Consejos para la conservación de agua</h1>
             <p>Es importante que todos hagamos nuestra parte para usar menos agua. Haz clic en esta aplicación para ver ideas y consejos de conservación.</p>
             <div>
-                <button class="btn btn-primary" onclick="setLanguage('en')">English</button>
-                <button class="btn btn-primary" onclick="setLanguage('es')">Spanish</button>
+                <button class="btn btn-primary">English</button>
+                <button class="btn btn-primary">Spanish</button>
                 <button class="btn btn-primary">Next</button>
             </div>
         </div>
