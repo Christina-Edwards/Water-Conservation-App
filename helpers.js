@@ -154,4 +154,5 @@ function onEvent(id, event, handler) {
       return;
     }
     el.src = url;
-    console.info("setImageURL: #" + id + " → " + url);
+    console.info("setImageURL: #" + id + " → " + url)
+  }
